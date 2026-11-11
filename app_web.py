@@ -518,11 +518,8 @@ elif st.session_state.pagina == 'novo':
                 st.success("✅ Momento salvo com sucesso! 💕")
                 st.balloons()
                 st.session_state.pessoa_form = None
-
-                # Botão para voltar
-                if st.button("← Voltar ao início"):
-                    st.session_state.pagina = 'home'
-                    st.rerun()
+                st.session_state.pagina = 'home'
+                st.rerun()
 
 # Página HISTÓRICO
 elif st.session_state.pagina == 'historico':
